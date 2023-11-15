@@ -1,5 +1,7 @@
 package chap12.generics;
 
+import java.util.ArrayList;
+
 public class GenericPrinterTest {
     public static void main(String[] args) {
 
@@ -15,7 +17,6 @@ public class GenericPrinterTest {
         Plastic plastic =  plasticPrinter.getMaterial(); //형변환 하지 않음
         //System.out.println(plasticPrinter);
         plasticPrinter.printing();
-
 
 
     }
