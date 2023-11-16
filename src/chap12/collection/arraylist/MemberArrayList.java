@@ -32,15 +32,15 @@ public class MemberArrayList {
 
     //회원 삭제
     public boolean removeMember(int memberId){
-//        for(int i=0; i<arrayList.size(); i++){
-//            Member member = arrayList.get(i);
-//            int tempId = member.getMemberId();
-//
-//            if(tempId == memberId){  //회원 아이디가 매개변수와 일치하면
-//                arrayList.remove(i); //해당 회원을 삭제
-//                return true;
-//            }
-//        }
+        for(int i=0; i<arrayList.size(); i++){
+            Member member = arrayList.get(i);
+            int tempId = member.getMemberId();
+
+            if(tempId == memberId){  //회원 아이디가 매개변수와 일치하면
+                arrayList.remove(i); //해당 회원을 삭제
+                return true;
+            }
+        }
         Iterator<Member> ir = arrayList.iterator();
         while(ir.hasNext()){  //hasNext 메소드는 이후에 요소가 더 있는지 체크 하는 메서드
                               //요소가 있으면 true 반환
