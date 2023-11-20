@@ -19,7 +19,8 @@ class Outter {
                 System.out.println("localNum ::" + localNum);
             }
         }
-        return new MyRunnable();
+        return new MyRunnable(); //지역내부 클래스 이름은 클래스를
+                        //생성해서 반환할 때만 사용함
     }
 }
 
