@@ -59,7 +59,7 @@ class MySokoban extends JFrame implements KeyListener, ActionListener{
              "#..@..#       ",
              "#  $  #       ",
              "###  ##       ",
-             "####          ",
+             " ####         ",
             },
             //stage2
             {"##############",
@@ -231,6 +231,30 @@ class MySokoban extends JFrame implements KeyListener, ActionListener{
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        JButton temp = (JButton) e.getSource();
+        int iX = iXMan; //iX 새 좌표값, iXMan은 기존 좌표값
+        int iY=  iYMan; //iY 새 좌표값, iYMan은 기존 좌표값
+
+        if(temp.equals(btnReset)){
+            LoadMap();
+            repaint();
+            return;
+        }else if(temp.equals(btnUP)){
+            Man = ManB;
+            --iY;
+        }else if(temp.equals(btnDOWN)){
+            Man = ManF;
+            ++iY;
+        }else if(temp.equals(btnLEFT)){
+            Man = ManL;
+            --iX;
+        }else if(temp.equals(btnRIGHT)){
+            Man = ManR;
+            ++iX;
+        }
+        ManMove(iX,iY);
+        repaint();
+
 
     }
 

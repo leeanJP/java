@@ -1,0 +1,91 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 0 1rem;
+    color: #fff;
+}
+
+main {
+    padding: 1rem;
+}
+
+.hero {
+    background-image: url("https://i.imgur.com/s11r19a.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    text-align: center;
+}
+
+.hero h2 {
+    color: #fff;
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+.hero p {
+    color: #fff;
+    margin-top: 1rem;
+}
+
+.hero a {
+    color: #fff;
+    background-color: #222;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    margin-top: 2rem;
+}
+
+.features {
+    margin-top: 2rem;
+}
+
+.features h3 {
+    margin-top: 0;
+}
+
+.features ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.customers {
+    margin-top: 2rem;
+}
+
+.customers h3 {
+    margin-top: 0;
+}
+
+.customers ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
